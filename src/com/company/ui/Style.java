@@ -8,7 +8,7 @@ import java.awt.*;
  */
 public class Style {
     private final static Dimension GROUP_BUTTON = new Dimension(100,40);
-    private final static Dimension ITEM_BUTTON = new Dimension(150,30);
+    private final static Dimension ITEM_BUTTON = new Dimension(150,40);
     private final static Dimension NOMAL_BUTTON = new Dimension(110,30);
     private final static Dimension FIELD_SIZE = new Dimension(180,30);
 
@@ -19,7 +19,6 @@ public class Style {
 
     private final static Color COLOR1 = new Color(4,173,132);
     private final static Color COLOR2 = new Color(255,255,255);
-   // private final static Color COLOR3 = new Color(0,204,255);
     private final static Color COLOR3 = new Color(51,153,153);
 
     public static void setGroupButtonStyle(JButton jButton){
@@ -27,7 +26,6 @@ public class Style {
         jButton.setFont(GROUP_FONT);
         jButton.setBackground(COLOR1);
         jButton.setBorder(null);
-        jButton.setForeground(Color.BLACK);
         //jButton.setOpaque(false);
     }
 
@@ -36,6 +34,7 @@ public class Style {
         jButton.setBackground(COLOR1);
         jButton.setFont(NOMAL_FONT);
         jButton.setForeground(COLOR2);
+        jButton.setBorder(null);
 
     }
 
@@ -44,6 +43,7 @@ public class Style {
         jButton.setBackground(COLOR1);
         jButton.setFont(ITEM_FONT);
         jButton.setForeground(COLOR2);
+        jButton.setBorder(null);
     }
 
     public static void setFieldStyle(JComponent jComponent){

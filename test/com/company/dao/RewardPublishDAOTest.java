@@ -28,7 +28,7 @@ public class RewardPublishDAOTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         java.util.Date utilDate = sdf.parse(timeString);
         Date date = new Date(utilDate.getTime());
-        RewardPublish rewardPublish = new RewardPublish("1002","奖","明星员工",date);
+        RewardPublish rewardPublish = new RewardPublish(9,"1004","奖","明星员工",date);
         int n = rewardPublishDAO.insertRP(rewardPublish);
         assertEquals(1,n);
 
@@ -53,7 +53,7 @@ public class RewardPublishDAOTest {
 
     @Test
     public void getRP() throws Exception {
-        List<RewardPublish> list = rewardPublishDAO.getRP("1002");
+        List<RewardPublish> list = rewardPublishDAO.getRP("1001");
         list.forEach(rewardPublish -> System.out.println(rewardPublish));
 
 

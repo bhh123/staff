@@ -17,12 +17,12 @@ public class MyMouseAdapter extends MouseAdapter {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        Style.setChangeGroup(jButton);
+        Style.setChangeItem(jButton);
 
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        Style.setGroupButtonStyle(jButton);
+        Style.setItemButtonStyle(jButton);
     }
 }

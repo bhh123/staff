@@ -11,9 +11,11 @@ import java.awt.*;
 public class LoginFrame extends JFrame{
     private JPanel mainPanel;
     private JPanel centrePanel;
+    private JTextField textField1;
+    private JPasswordField passwordField1;
+    private JButton button1;
 
     public LoginFrame() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JFrame.setDefaultLookAndFeelDecorated(true);
         setVisible(true);
         setTitle("登录界面");
